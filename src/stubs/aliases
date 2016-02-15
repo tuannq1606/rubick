@@ -1,0 +1,19 @@
+alias ..="cd .."
+alias ...="cd ../.."
+
+alias h='cd ~'
+alias c='clear'
+
+alias serve=serve-rails
+
+function serve-rails() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo dos2unix /vagrant/scripts/serve-rails.sh
+        sudo bash /vagrant/scripts/serve-rails.sh "$1" "$2" 80
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve domain path"
+    fi
+}
