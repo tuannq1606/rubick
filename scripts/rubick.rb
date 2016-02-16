@@ -49,9 +49,10 @@ class Rubick
 
     # Default Port Forwarding
     default_ports = {
+      3000 => 3000, # Default Rails Server Port
+      2300 => 2300, # Default Hanami Server Port
       80   => 8000,
       443  => 44300,
-      3000 => 3000,
       3306 => 33060,
       5432 => 54320
     }

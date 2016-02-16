@@ -4,6 +4,9 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 
+alias rs='bin/rails server -b 0.0.0.0'
+alias hs='bundle exec hanami server -b 0.0.0.0'
+
 alias serve=serve-rails
 
 function serve-rails() {

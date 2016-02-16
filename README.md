@@ -6,7 +6,7 @@ The official Ruby on Rails and Hanami local development environment.
 
 Rubick is a pre-packaged Vagrant box that provides you a wonderful development environment without requiring you to install Ruby, Rails, Hanami, a web server, and any other server software on your local machine. No more worrying about messing up your operating system! Vagrant boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
-Rubick runs on any Windows, Mac, or Linux system, and includes the Nginx web server, Ruby 2.2.4, Rails 4.2.5.1, Hanami 0.7.0, MySQL, Postgres, Redis, Memcached, and all of the other goodies you need to develop amazing Ruby applications.
+Rubick runs on any Windows, Mac, or Linux system, and includes the Nginx web server, Ruby 2.2.4, Rails 4.2.5.1, Hanami 0.7.2, MySQL, Postgres, Redis, Memcached, Node and all of the other goodies you need to develop amazing Ruby applications.
 
 > Note: If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be
 > enabled via your BIOS.
@@ -23,6 +23,7 @@ Rubick runs on any Windows, Mac, or Linux system, and includes the Nginx web ser
 * MySQL
 * Sqlite3
 * Postgres
+* Node (With PM2, Bower, Grunt, and Gulp)
 * Redis
 * Memcached
 
@@ -115,12 +116,13 @@ Once your Rubick environment is provisioned and running, you may want to add add
 
 By default, the following ports are forwarded to your Rubick environment:
 
+* Rails Server: 3000 → Forwards To 3000
+* Hanami Server: 2300 → Forwards To 2300
 * SSH: 2222 → Forwards To 22
 * HTTP: 8000 → Forwards To 80
 * HTTPS: 44300 → Forwards To 443
 * MySQL: 33060 → Forwards To 3306
 * Postgres: 54320 → Forwards To 5432
-* WEBrick: 3000 → Forwards To 3000
 
 **Forwarding Additional Ports**
 
