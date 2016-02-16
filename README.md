@@ -77,9 +77,9 @@ To enable `NFS`, just add a simple flag to your synced folder configuration:
 
 Not familiar with Nginx? No problem. The `sites` property allows you to easily map a "domain" to a folder on your Rubick environment. A sample site configuration is included in the `Rubick.yaml` file. Again, you may add as many sites to your Rubick environment as necessary. Rubick can serve as a convenient, virtualized environment for every Laravel project you are working on:
 
-sites:
-    - map: rubick.app
-      to: /home/vagrant/Code/rubick/public
+    sites:
+        - map: rubick.app
+          to: /home/vagrant/Code/rubick/public
       
 If you change the `sites` property after provisioning the Rubick box, you should re-run `vagrant reload --provision` to update the Nginx configuration on the virtual machine.
 
