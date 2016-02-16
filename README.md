@@ -34,7 +34,7 @@ Before launching your Rubick environment, you must install [VirtualBox 5.x](http
 
 **Installing The Rubick Vagrant Box**
 
-Once VirtualBox and Vagrant have been installed, you should add the ubuntu/trusty64 box to your Vagrant installation using the following command in your terminal. It will take a few minutes to download the box, depending on your Internet connection speed:
+Once VirtualBox and Vagrant have been installed, you should add the `ubuntu/trusty64` box to your Vagrant installation using the following command in your terminal. It will take a few minutes to download the box, depending on your Internet connection speed:
 
     vagrant box add ubuntu/trusty64
 
