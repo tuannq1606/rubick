@@ -73,7 +73,17 @@ To enable `NFS`, just add a simple flag to your synced folder configuration:
         - map: ~/Code
           to: /home/vagrant/Code
           type: "nfs"
-          
+
+**Quickstart Your Sites**
+
+To start Rails built-in web sever WEBrick, you may use the `bin/rails server -b 0.0.0.0` command or alias `rs`. Once you have started the Rails built-in web server, you can access the site via your web browser:
+
+    http://localhost:3000
+
+To start Hanami built-in web sever WEBrick, you may use the `bundle exec hanami server -b 0.0.0.0` command or alias `hs`. Once you have started the Hanami built-in web server, you can access the site via your web browser:
+
+    http://localhost:2300
+
 **Configuring Nginx Sites**
 
 Not familiar with Nginx? No problem. The `sites` property allows you to easily map a "domain" to a folder on your Rubick environment. A sample site configuration is included in the `Rubick.yaml` file. Again, you may add as many sites to your Rubick environment as necessary. Rubick can serve as a convenient, virtualized environment for every Laravel project you are working on:
@@ -116,8 +126,8 @@ Once your Rubick environment is provisioned and running, you may want to add add
 
 By default, the following ports are forwarded to your Rubick environment:
 
-* Rails Server: 3000 → Forwards To 3000
-* Hanami Server: 2300 → Forwards To 2300
+* Rails: 3000 → Forwards To 3000
+* Hanami: 2300 → Forwards To 2300
 * SSH: 2222 → Forwards To 22
 * HTTP: 8000 → Forwards To 80
 * HTTPS: 44300 → Forwards To 443
