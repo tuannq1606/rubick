@@ -85,15 +85,15 @@ echo 'Done is better than perfect!'
 # Next, we need to update the Nginx configuration to point Passenger to the version of Ruby that we're using.
 # SSH into your virtual machine by issuing the `vagrant ssh` terminal command from your Rubick directory.
 # Open up /etc/nginx/nginx.conf
-#   sudo vim /etc/nginx/nginx.conf
+#    sudo vim /etc/nginx/nginx.conf
 # Find the following lines, and uncomment them:
 #
 #
-
-# Phusion Passenger config
-##
-# Uncomment it if you installed passenger or passenger-enterprise
-##
-
-# passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
-# passenger_ruby /usr/bin/passenger_free_ruby;
+#
+#    # Phusion Passenger config
+#    # #
+#    # Uncomment it if you installed passenger or passenger-enterprise
+#    # #
+#
+#    # passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
+#    # passenger_ruby /usr/bin/passenger_free_ruby;
