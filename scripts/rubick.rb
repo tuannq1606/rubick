@@ -16,6 +16,8 @@ class Rubick
     config.vm.box = settings["box"] ||= "ubuntu/trusty64"
     config.vm.hostname = settings["hostname"] ||= "rubick"
 
+    config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
+
     # Configure A Private Network IP
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
 
