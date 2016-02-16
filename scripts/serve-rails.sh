@@ -17,7 +17,9 @@ fi
 block="server {
     listen ${3:-80};
     listen ${4:-443} ssl;
+
     server_name $1;
+    passenger_enabled on;
     root \"$2\";
 
     charset utf-8;
