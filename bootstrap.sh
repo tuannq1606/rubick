@@ -13,7 +13,7 @@ apt-get -y update >/dev/null 2>&1
 
 install 'some dependencies' git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
-install rvm libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+install rvm libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev
 echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 echo "export rvm_max_time_flag=20" >> ~/.rvmrc
 echo "[[ -s '${HOME}/.rvm/scripts/rvm' ]] && source '${HOME}/.rvm/scripts/rvm'" >> ~/.bashrc
