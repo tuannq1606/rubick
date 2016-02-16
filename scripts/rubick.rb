@@ -13,10 +13,8 @@ class Rubick
     config.ssh.forward_agent = true
 
     # Configure The Box
-    config.vm.box = settings["box"] ||= "ubuntu/trusty64"
+    config.vm.box = settings["box"] ||= "cuonggt/rubick"
     config.vm.hostname = settings["hostname"] ||= "rubick"
-
-    config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
 
     # Configure A Private Network IP
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
@@ -156,7 +154,5 @@ class Rubick
           end
         end
     end
-
-    # config.vm.provision :shell, path: 'bootstrap.sh', keep_color: true
   end
 end
