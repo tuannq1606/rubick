@@ -76,11 +76,11 @@ To enable `NFS`, just add a simple flag to your synced folder configuration:
 
 **Quickstart Your Sites**
 
-To start Rails built-in web sever WEBrick, you may use the `bin/rails server -b 0.0.0.0` command or alias `rs`. Once you have started the Rails built-in web server, you can access the site via your web browser:
+To start Rails built-in web sever WEBrick, you may use the `bin/rails server -b 0.0.0.0` command. Once you have started the Rails built-in web server, you can access the site via your web browser:
 
     http://localhost:3000
 
-To start Hanami built-in web sever WEBrick, you may use the `bundle exec hanami server --host=0.0.0.0` command or alias `hs`. Once you have started the Hanami built-in web server, you can access the site via your web browser:
+To start Hanami built-in web sever WEBrick, you may use the `bundle exec hanami server --host=0.0.0.0`. Once you have started the Hanami built-in web server, you can access the site via your web browser:
 
     http://localhost:2300
 
