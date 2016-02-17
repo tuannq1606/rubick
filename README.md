@@ -106,7 +106,7 @@ Make sure the IP address listed is the one set in your `~/.rubick/Rubick.yaml` f
 
 ### Launching The Vagrant Box
 
-Once you have edited the Rubick.yaml to your liking, run the vagrant up command from your Rubick directory. Vagrant will boot the virtual machine and automatically configure your shared folders and Nginx sites.
+Once you have edited the `Rubick.yaml` to your liking, run the `vagrant up` command from your Rubick directory. Vagrant will boot the virtual machine and automatically configure your shared folders and Nginx sites.
 
 To destroy the machine, you may use the `vagrant destroy --force` command.
 
@@ -118,9 +118,19 @@ You can SSH into your virtual machine by issuing the `vagrant ssh` terminal comm
 
 But, since you will probably need to SSH into your Rubick machine frequently, consider adding the "alias" described above to your host machine to quickly SSH into the Rubick box.
 
+### Connecting To Databases
+
+A `rubick` database is configured for both MySQL and Postgres out of the box.
+
+To connect to your MySQL or Postgres database from your host machine via Navicat or Sequel Pro, you should connect to `127.0.0.1` and port `33060` (MySQL) or `54320` (Postgres). The username and password for both databases is `rubick / secret`.
+
+> Note: You should only use these non-standard ports when connecting to the databases from 
+> your host machine. You will use the default 3306 and 5432 ports in your database configuration 
+> file since the application is running within the virtual machine.
+
 ### Adding Additional Sites
 
-Once your Rubick environment is provisioned and running, you may want to add additional Nginx sites for your Ruby applications. You can run as many Ruby installations as you wish on a single Rubick environment. To add an additional site, simply add the site to your ~/.rubick/Rubick.yaml file and then run the vagrant provision terminal command from your Rubick directory.
+Once your Rubick environment is provisioned and running, you may want to add additional Nginx sites for your Ruby applications. You can run as many Ruby installations as you wish on a single Rubick environment. To add an additional site, simply add the site to your `~/.rubick/Rubick.yaml` file and then run the `vagrant provision` terminal command from your Rubick directory.
 
 ### Ports
 
